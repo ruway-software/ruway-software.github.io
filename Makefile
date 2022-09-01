@@ -32,3 +32,4 @@ deploy:
 	git add .
 	git commit -m "Update at (`date '+%F %T %Z'`) [main]"
 	git push origin head
+	git checkout develop
