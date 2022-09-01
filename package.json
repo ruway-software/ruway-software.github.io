@@ -1,0 +1,33 @@
+{
+    "name": "ruway-software",
+    "version": "1.0.0",
+    "description": "página web nuestro proyecto",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev:css": "npx tailwind build css/default.css -c tailwind.config.js -o _site/css/default.css",
+      "build:css": "npx postcss css/default.css -o _site/css/default.min.css",
+      "build:css2": "npx postcss src/assets/css/main.css -o dist/css/tailwind.min.css;cp src/index.html dist;cp -r src/assets/images dist/;cp -r node_modules/tw-elements/dist/js/index.min.js dist/js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://ruway-software@github.com/ruway-software/ruway-software.github.io.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://ruway-software@github.com/ruway-software/issues"
+    },
+    "homepage": "https://ruway-software.github.io",
+    "dependencies": {
+      "autoprefixer": "^10.4.4",
+      "postcss": "^8.4.12",
+      "postcss-cli": "^9.1.0",
+      "tw-elements": "^1.0.0-alpha12"
+    },
+    "devDependencies": {
+      "tailwindcss": "^3.0.24"
+    }
+  }
+  
