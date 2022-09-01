@@ -19,4 +19,6 @@ cabal.sandbox.config
 .stack-work/
 _cache/
 _site/
+
+### Node ###
 node_modules/

@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="/css/default.css" />
   </head>
 
-  <body class="bg-gray-100 font-sans leading-normal tracking-normal">
+  <body class="bg-gray-100 leading-normal tracking-normal">
 
 	<nav id="header" class="fixed w-full z-10 top-0">
 
@@ -53,16 +53,16 @@
 
 	<!--Container-->
 	<div class="container w-full md:max-w-3xl mx-auto pt-20">
-		<div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal" style="font-family:Georgia,serif;">
-            <!--Title-->
-            <div class="font-sans">
-                <h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">$title$</h1>
-            </div>
+		<div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal">
+			<article class="prose lg:prose-xl">
+				<!--Title-->
+				<h1 class="font-bold break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">$title$</h1>
+	
+				$body$
 
-            $body$
-
-			<!-- Foot space -->
-			<div class="py-8" />
+				<!-- Foot space -->
+				<div class="py-8" />
+			</article>
 		</div>
 	</div>
 	<!--/container-->
