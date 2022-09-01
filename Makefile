@@ -20,5 +20,15 @@ update:
 
 commit:
 	git add .
-	git commit -m "Update at (`date '+%F %T %Z'`)"
+	git commit -m "Update at (`date '+%F %T %Z'`) [develop]"
+	git push origin head
+
+deploy:
+	git fetch origin
+	git checkout main
+	git stash
+	git rebase origin/main
+	cp -r _site/ .
+	git add .
+	git commit -m "Update at (`date '+%F %T %Z'`) [main]"
 	git push origin head
